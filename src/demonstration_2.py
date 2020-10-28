@@ -31,6 +31,24 @@ Input:
 Output: False
 Explanation: The root node's value is 10 but its right child's value is 8.
 """
+
+"""
+UNDERSTAND: 
+
+
+PLAN:
+is root.left.value < root.value ?
+is root.right.value > root.value ?
+is root.left valid ?
+is root.right valid ?
+
+need to make sure the child nodes are within the allowed bounds of their position in the tree 
+in comparison to the root 
+
+"""
+
+
+
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, value=0, left=None, right=None):
